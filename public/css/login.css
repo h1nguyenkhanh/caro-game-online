@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    z-index: -1;
+    position: fixed;
+    height: 50%;
+}
+
+
+.login-screen {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-screen h3 {
+    font-size: 25px;
+}
+
+.login-screen input {
+    padding: 10px;
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.login-screen button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    color: #fff;
+}
+
+.login-screen button:active {
+    box-shadow: inset 0 0 10px #fff;
+}
+
+

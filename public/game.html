@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/game.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./js/game.js"></script>
+    </head>
+    <body>
+        <div class="game-screen">
+            <div class="left-content">
+                <div class="game-header">
+                    <h1>Caro</h1>
+                </div>
+                <h3>Xin chào</h3>
+                <div class="user-online">
+                    <h5>Người chơi đang online</h5>
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="game-option">
+                    <div class="game-start">
+                        <input type="text">
+                        <button>Ghép cặp</button>
+                    </div>
+                    <div class="logout">
+                        <button>Thoát</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chess-board"></div>
+            <div class="chat-wrapper">
+                <div class="chat-box" id="style-1">
+                    <div class="chat-line">
+                        <b class="chat-user">khanh:</b>
+                        <p>hello</p>
+                    </div>
+                    <div class="chat-line">
+                        <b class="chat-user">khanh:</b>
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="chat-form">
+                    <input type="text">
+                    <button type="button">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Document
+    link(rel='stylesheet', href='./css/style.css')
+    link(rel='stylesheet', href='./css/game.css')
+    script(src='/socket.io/socket.io.js')
+    script(src='./js/game.js')
+  body
+    .game-screen
+      .left-content
+        .game-header
+          h1 Caro
+        if currentUser  
+          h3 Xin chào 
+            span #{currentUser.name}
+        else
+          h3 Xin chào
+        .user-online
+          h5 Người chơi đang online
+          ul
+            each item in data
+                li
+                    p=item.name
+        .game-option
+          .game-start
+            input(type='text')
+            button Ghép cặp
+          .logout
+            button Thoát
+      .chess-board
+      .chat-wrapper
+        #style-1.chat-box
+          p.chat-line
+            b.chat-user khanh
+            span : hello
+          p.chat-line
+            b.chat-user khanh
+            span : hello
+        .chat-form
+          input(type='text')
+          button(type='submit') Gửi
